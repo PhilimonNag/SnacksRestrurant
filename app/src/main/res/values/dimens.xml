@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_text">46sp</dimen>
+    <dimen name="top_margin">70dp</dimen>
+    <dimen name="input_gap">24dp</dimen>
+    <dimen name="layout_padding">24dp</dimen>
+    <dimen name="drawable_padding">8dp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="other_headings">36sp</dimen>
+    <dimen name="card_item">16dp</dimen>
+</resources>

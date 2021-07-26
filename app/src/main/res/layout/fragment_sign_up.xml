@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud"
+    tools:context=".Login.SignUpFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="#C5000000" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/register"
+            android:textColor="#FAF7F7"
+            android:textSize="@dimen/heading_text" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:hint="@string/restrurant"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/HotelDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/description"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableStart="@drawable/ic_description"
+            android:inputType="textMultiLine"
+            android:minHeight="70dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/PostalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:ems="10"
+            android:hint="@string/postal_address"
+            android:inputType="textPostalAddress"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableStart="@drawable/ic_address"
+            android:minHeight="70dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:ems="10"
+            android:hint="@string/mobileNumber"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="8dp"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color"
+            app:drawableStartCompat="@drawable/ic_call" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color" />
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:backgroundTint="@color/button"
+            android:padding="@dimen/button_padding"
+            android:text="@string/signup"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/otpView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:ems="10"
+            android:hint="@string/enter_otp_here"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:textColor="@color/text"
+            android:textColorHint="@color/hint_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/verify"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_padding"
+            android:layout_marginTop="@dimen/input_gap"
+            android:layout_marginEnd="@dimen/layout_padding"
+            android:text="@string/verify"
+            android:textColor="@color/button"
+            android:visibility="gone"
+            app:strokeColor="@color/button"
+            app:strokeWidth="2dp" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
